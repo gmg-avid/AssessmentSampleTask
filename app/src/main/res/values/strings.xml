@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">AssessmentSampleTask</string>
+    <string name="enter_email">Enter email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="email_is_not_empty">Email is not empty</string>
+    <string name="password_is_not_empty">Password is not empty</string>
+    <string name="email_is_required_valid">Enter the valid email</string>
+    <string name="password_is_required_valid">The password must required minimum 6 character length</string>
+    <string name="invalid_user">User details is not registered</string>
+    <string name="invalid_password">Password are in-correct</string>
+    <string name="user_register_already">The email is already registered</string>
+    <string name="okay">Okay</string>
+    <string name="add">add</string>
+    <string name="no_task_available">No task available</string>
+    <string name="new_task">New Task</string>
+    <string name="task_name">Task name</string>
+    <string name="enter_the_task_name">Enter the task name</string>
+    <string name="enter_the_task_description">Enter the task description</string>
+    <string name="task_description">Task description</string>
+    <string name="task_schedule_date">Task schedule date</string>
+    <string name="enter_the_task_schedule_date">Enter the task schedule date</string>
+    <string name="task_type">Task type</string>
+    <string name="enter_the_task_type">Enter the task type</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="task_name_should_not_empty">Task name should not be empty</string>
+    <string name="task_description_should_not_empty">Task description should not be empty</string>
+    <string name="task_schedule_date_should_not_empty">Task schedule date should not be empty</string>
+    <string name="task_type_should_not_empty">Task type should not be empty</string>
+    <string name="enter_password">Enter password</string>
 </resources>
