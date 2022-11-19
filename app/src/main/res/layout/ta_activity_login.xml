@@ -112,6 +112,7 @@
             android:layout_height="wrap_content"
             android:text="@string/already_have_account"
             android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/spacing_70"
             android:layout_marginTop="@dimen/spacing_20"
             android:fontFamily="@font/lato_black"
             app:layout_constraintBottom_toBottomOf="parent"
