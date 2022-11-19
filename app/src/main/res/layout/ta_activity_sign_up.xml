@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".login.TALoginActivity">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_round_corner_button"
+            android:paddingBottom="@dimen/spacing_15"
+            android:paddingEnd="@dimen/spacing_50"
+            android:paddingStart="@dimen/spacing_50"
+            android:paddingTop="@dimen/spacing_15"
+            android:text="@string/sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_55"
+            android:layout_marginEnd="@dimen/spacing_20"
+            android:layout_marginStart="@dimen/spacing_20"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/bg_round_corner_edit_field"
+            android:fontFamily="@font/lato_black"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:paddingEnd="@dimen/spacing_16"
+            android:paddingStart="@dimen/spacing_16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            tools:text="gowthamavid@gmail.com" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_55"
+            android:layout_marginEnd="@dimen/spacing_20"
+            android:layout_marginStart="@dimen/spacing_20"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/bg_round_corner_edit_field"
+            android:fontFamily="@font/lato_black"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="@dimen/spacing_16"
+            android:paddingStart="@dimen/spacing_16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            tools:text="gowthamavid@gmail.com" />
+
+        <ImageView
+            android:id="@+id/iv_todo_logo"
+            android:layout_width="@dimen/spacing_200"
+            android:layout_height="@dimen/spacing_220"
+            android:layout_marginTop="@dimen/spacing_110"
+            android:src="@drawable/ic_todo_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_36"
+            android:layout_marginTop="@dimen/spacing_48"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_todo_logo" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_25"
+            android:fontFamily="@font/lato_black"
+            android:text="@string/password"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/tv_email"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+        <TextView
+            android:id="@+id/tv_sign_up_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_account"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_marginBottom="@dimen/spacing_70"
+            android:fontFamily="@font/lato_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

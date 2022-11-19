@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/spacing_10"
+            android:paddingBottom="@dimen/spacing_10"
+            android:paddingStart="@dimen/spacing_14"
+            android:paddingEnd="@dimen/spacing_11"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_task_selection"
+                android:layout_width="@dimen/spacing_30"
+                android:layout_height="@dimen/spacing_30"
+                android:src="@drawable/ic_tick"
+                android:background="@drawable/bg_circular_violet"
+                android:layout_marginTop="@dimen/spacing_20"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintEnd_toStartOf="@id/iv_task_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_task_title"
+                android:layout_width="@dimen/spacing_0"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="@dimen/font_17"
+                android:layout_marginEnd="@dimen/spacing_10"
+                android:layout_marginTop="@dimen/spacing_7"
+                android:fontFamily="@font/lato_black"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_task_selection"
+                app:layout_constraintEnd_toStartOf="@id/iv_task_image"
+                tools:text="Task 1"/>
+
+            <TextView
+                android:id="@+id/tv_task_type"
+                android:layout_width="@dimen/spacing_0"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="@dimen/font_12"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:fontFamily="@font/lato_black"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tv_task_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_task_title"
+                app:layout_constraintEnd_toEndOf="@id/tv_task_title"
+                tools:text="Regular"/>
+
+            <TextView
+                android:id="@+id/tv_task_date"
+                android:layout_width="@dimen/spacing_0"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="@dimen/font_17"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:fontFamily="@font/lato_black"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tv_task_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_task_type"
+                app:layout_constraintEnd_toEndOf="@id/iv_task_image"
+                tools:text="12-Aug-2022"/>
+
+            <TextView
+                android:id="@+id/tv_task_description"
+                android:layout_width="@dimen/spacing_0"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:textSize="@dimen/font_17"
+                android:textColor="@color/grey700"
+                android:layout_marginTop="@dimen/spacing_5"
+                android:fontFamily="@font/lato_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_task_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_task_date"
+                app:layout_constraintEnd_toEndOf="@id/iv_task_image"
+                tools:text="Description to be given for the task one. This field contains details of the task 1. "/>
+
+            <ImageView
+                android:id="@+id/iv_task_image"
+                android:layout_width="@dimen/spacing_70"
+                android:layout_height="@dimen/spacing_95"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_todo_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

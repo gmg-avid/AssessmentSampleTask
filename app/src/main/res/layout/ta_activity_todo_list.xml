@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/spacing_0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_todo"
+            android:layout_width="match_parent"
+            android:background="@color/white900"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_todo_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:id="@+id/iv_user_profile"
+                    android:layout_width="@dimen/spacing_40"
+                    android:layout_height="@dimen/spacing_40"
+                    android:src="@drawable/ic_profile_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="@dimen/spacing_0"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="@dimen/font_20"
+                    android:layout_marginStart="@dimen/spacing_11"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginEnd="@dimen/spacing_10"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/black"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="@id/iv_user_profile"
+                    app:layout_constraintStart_toEndOf="@id/iv_user_profile"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_user_profile"
+                    app:layout_constraintEnd_toStartOf="@id/tv_logout" />
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:textSize="@dimen/font_20"
+                    android:layout_marginEnd="@dimen/spacing_11"
+                    android:fontFamily="@font/lato_black"
+                    android:textColor="@color/violet"
+                    android:paddingStart="@dimen/spacing_2"
+                    android:paddingEnd="@dimen/spacing_2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toTopOf="@id/iv_user_profile"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_user_profile"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_todo_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_0"
+        android:padding="@dimen/spacing_10"
+        app:layout_constraintTop_toBottomOf="@id/abl_todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_task_unavailable"
+        android:layout_width="@dimen/spacing_0"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_30"
+        android:text="@string/no_task_available"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_margin="@dimen/spacing_15"
+        android:backgroundTint="@color/violet"
+        app:borderWidth="@dimen/spacing_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:elevation="6dp"
+        android:contentDescription="@string/add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
